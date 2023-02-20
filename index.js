@@ -51,7 +51,7 @@ app.post("/", async function(req, res){
         url: 'http://localhost:1337/api/group-infos',
         headers: {
             'Content-Type': 'application/json',
-            Authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywiaWF0IjoxNjcxNjQ1MTQ4LCJleHAiOjE2NzQyMzcxNDh9.9oNfwIJd5GtOrWpxrnUnDmplZIQYyiwdLmrUTnTiNTA'
+            Authorization: 'Bearer /* -- API TOKEN -- */'
         },
         body: {
             data: {
@@ -92,7 +92,7 @@ app.get("/viewuploaded", function(req, res){
         method: 'GET',
         url: 'http://localhost:1337/api/group-infos',
         headers: {
-        Authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywiaWF0IjoxNjcxNjQ1MTQ4LCJleHAiOjE2NzQyMzcxNDh9.9oNfwIJd5GtOrWpxrnUnDmplZIQYyiwdLmrUTnTiNTA'
+        Authorization: 'Bearer /* -- API TOKEN -- */'
         }
 
     };
@@ -114,7 +114,7 @@ app.get("/viewuploaded", function(req, res){
         method: 'GET',
         url: 'http://localhost:1337/api/upload/files',
         headers: {
-            Authorization: 'Bearer /* -- JWT TOKEN -- */'
+            Authorization: 'Bearer /* -- API TOKEN -- */'
         }
     };
 
