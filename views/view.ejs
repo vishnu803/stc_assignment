@@ -68,7 +68,8 @@
                 <% for(let i =0; i<media.length; i++){ %>
                    <tr>
                         <td>
-                            <%=media[i]['name']%>
+                            <%=media[i]['name']%> 
+                            <!-- <br><%=media%> -->
                         </td>
                         <td>
                             <%=media[i]['mime']%>
@@ -78,7 +79,7 @@
                             </audio> -->
                         </td>
                         <td>
-                            <img src=("http://localhost:1337"+<%=media[i]['url']%>) alt = "unable to fetch image" >
+                            <img src=<%= 'http://localhost:1337' + media[i]['url'] %> alt = "unable to fetch image" width="400" height="200">
                         </td>
                     </tr>
                 <%}%>
