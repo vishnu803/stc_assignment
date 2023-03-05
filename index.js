@@ -51,7 +51,7 @@ app.post("/", function (req, res) {
         url: 'http://localhost:1337/api/group-infos',
         headers: {
             'Content-Type': 'application/json',
-            Authorization: 'Bearer a4711ad6dca0506204872d5b1143fb47fc37b15937ff7a0d0489fa61d01b0f5125ec493078b20277eb5f3d056491600068eb270b2533992c3330be894f67ac0a3369f7ae362b191caf5f1fe969580c6aca6f234dbfc499f78eb32f9604a8f7913bfc793470ca35501e50f5783ba6a0baae01133731630da8b981fd27c6182592'
+            Authorization: 'Bearer /* YOUR API KEY */'
         },
         body: {
             data: {
@@ -88,7 +88,7 @@ function doRequest(url) {
         method: 'GET',
         url: url,
         headers: {
-            Authorization: 'Bearer a4711ad6dca0506204872d5b1143fb47fc37b15937ff7a0d0489fa61d01b0f5125ec493078b20277eb5f3d056491600068eb270b2533992c3330be894f67ac0a3369f7ae362b191caf5f1fe969580c6aca6f234dbfc499f78eb32f9604a8f7913bfc793470ca35501e50f5783ba6a0baae01133731630da8b981fd27c6182592'
+            Authorization: 'Bearer /* YOUR API KEY */'
         }
 
     };
